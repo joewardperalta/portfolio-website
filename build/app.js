@@ -10,7 +10,7 @@ app.set("views", "./build/views");
 
 // Sends the homepage
 app.get("/", (req, res) => {
-  res.render("index", { layout: false });
+  res.render("index", { title: "Joeward Peralta" });
 });
 
 app.listen(HTTP_PORT, () => {
