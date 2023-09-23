@@ -1,6 +1,8 @@
 const express = require("express");
 const { engine } = require("express-handlebars");
 
+const skills = require("./data/skills.json");
+
 const app = express();
 const HTTP_PORT = process.env.PORT || 3000;
 
@@ -12,7 +14,7 @@ app.use(express.static("build/public"));
 
 // Sends the homepage
 app.get("/", (req, res) => {
-  res.render("index", { title: "Joeward Peralta" });
+  res.render("index", { title: "Joeward Peralta", skills: skills.skills });
 });
 
 app.listen(HTTP_PORT, () => {
