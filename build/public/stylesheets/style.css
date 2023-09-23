@@ -8,9 +8,14 @@
   padding: 5rem 0;
 }
 
+img {
+  width: 100%;
+}
+
+.section-heading {
+  margin: 3rem 0;
+}
+
 #hero-section {
   background-size: cover;
-}
-#hero-description {
-  text-align: center;
 }
