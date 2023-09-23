@@ -8,6 +8,8 @@ app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
 app.set("views", "./build/views");
 
+app.use(express.static("build/public"));
+
 // Sends the homepage
 app.get("/", (req, res) => {
   res.render("index", { title: "Joeward Peralta" });
