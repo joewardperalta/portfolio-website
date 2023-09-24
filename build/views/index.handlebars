@@ -97,42 +97,27 @@
           saepe a dolorem deserunt vel repudiandae maiores officiis accusantium.
           Sed incidunt corrupti minima quod esse alias dolorum.
         </p>
+
+        {{! Skills container }}
+        <div class="mt-5" id="skills-container">
+          {{#each skills}}
+            <div
+              class="progress px-0 my-1"
+              role="progressbar"
+              aria-label="{{label}}"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar"
+                style="width: {{percentage}}%"
+              >{{label}}</div>
+            </div>
+          {{/each}}
+        </div>
       </div>
 
-    </div>
-  </div>
-</section>
-
-{{! Skills section }}
-<section class="section" id="skills-section">
-  <div class="container">
-    {{! Heading }}
-    <div class="row section-heading">
-      <h2>Check out my skill set</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ullam
-        animi ipsum aut magni.</p>
-    </div>
-
-    {{! Skills container }}
-    <div class="row gy-4" id="skills-container">
-
-      {{#each skills}}
-        <div class="col-6">
-          <div
-            class="progress px-0"
-            role="progressbar"
-            aria-label="{{label}}"
-            aria-valuenow="70"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div
-              class="progress-bar"
-              style="width: {{percentage}}%"
-            >{{label}}</div>
-          </div>
-        </div>
-      {{/each}}
     </div>
   </div>
 </section>
