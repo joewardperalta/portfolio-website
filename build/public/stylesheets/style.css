@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
 /* Variables */
 :root {
   --color-primary: rgb(39, 5, 125);
@@ -10,12 +12,13 @@
   box-sizing: border-box;
 }
 
-img {
-  width: 100%;
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 
-h1 {
-  font-size: 3.5rem;
+img {
+  width: 100%;
 }
 
 /* Typography */
@@ -64,4 +67,31 @@ h1 {
 
 #resume-section {
   background-color: aliceblue;
+}
+
+/* Media Queries */
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .heading-title {
+    font-size: 2.2rem;
+  }
+
+  .heading-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .section-heading {
+    margin: 0 0 2.5rem 0;
+  }
+
+  #hero-section {
+    padding: 5rem 0;
+  }
 }

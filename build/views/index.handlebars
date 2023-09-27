@@ -7,16 +7,16 @@
         <div class="text-light text-center">
           <h1 class="title my-3">Full Stack Web Developer</h1>
           <p class="subtitle mb-5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            I love creating static and dynamic websites!
           </p>
-          <button class="btn btn-primary">Learn more about me
+          <a class="btn btn-primary" href="#about-section">Learn more about me
             <span>
               <i
                 class="fa-solid fa-arrow-down ms-2"
                 style="color: #ffffff;"
               ></i>
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
   <div class="container">
     {{! About section heading }}
     <div class="row justify-content-center">
-      <div class="col-5">
+      <div class="col-lg-6">
         <div class="section-heading text-center">
           <h2 class="heading-title">About Me</h2>
           <p class="heading-subtitle">
@@ -39,7 +39,8 @@
     </div>
 
     {{! About section body }}
-    <div class="row align-items-center">
+    <div class="row gx-5 align-items-center">
+      {{! Profile picture }}
       <div class="col-lg-6 mb-4 mb-lg-0" id="profile-picture">
         <img
           src="/images/profile.jpg"
@@ -47,8 +48,9 @@
         />
       </div>
 
-      <div class="col" id="about-description">
-        <h3>Joeward Peralta</h3>
+      {{! About description }}
+      <div class="col-lg-6" id="about-description">
+        <h3>My name is Joeward Peralta</h3>
         <p>
           I'm a Full-stack web developer. I'm currently studying in Seneca
           College Newnham in Computer Programming and Analysis. I have knowledge
@@ -82,7 +84,8 @@
 <section class="section" id="resume-section">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-6">
+      {{! Resume section heading }}
+      <div class="col-lg-6">
         <div class="section-heading text-center">
           <h2 class="heading-title">My Resume</h2>
           <p class="heading-subtitle">
@@ -92,8 +95,10 @@
       </div>
     </div>
 
+    {{! Resume section body }}
     <div class="row align-items-center">
-      <div class="col">
+      {{! Resume download }}
+      <div class="col-lg-6 mb-4 mb-lg-0">
         <div class="text-center">
           <p>
             You can download a PDF version of my resume by clicking the button
@@ -108,7 +113,9 @@
           </a>
         </div>
       </div>
-      <div class="col">
+
+      {{! Resume img }}
+      <div class="col-lg-6">
         <img class="shadow-lg" src="/images/resume-page1.jpg" alt="Resume" />
       </div>
     </div>
@@ -118,9 +125,20 @@
 {{! Contact section }}
 <section class="section bg-dark text-white" id="contact-section">
   <div class="container">
-    <div class="text-center">
-      <h2>Contact Me</h2>
-      <p class="mb-0">For any questions please email joeward_peralta@outlook.com</p>
+    <div class="row">
+      {{! Contact section heading }}
+      <div class="col-12">
+        <div class="section-heading text-center">
+          <h2 class="heading-title">Contact Me</h2>
+        </div>
+      </div>
+
+      {{! Contact section body }}
+      <div class="col text-center">
+        <p class="mb-0">
+          For any questions please email joeward_peralta@outlook.com
+        </p>
+      </div>
     </div>
   </div>
 </section>
