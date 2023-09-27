@@ -1,33 +1,67 @@
+/* Variables */
 :root {
   --color-primary: rgb(39, 5, 125);
 }
 
+/* Global */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.section {
-  padding: 5rem 0;
-}
-
 img {
   width: 100%;
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+
+/* Typography */
+.title {
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.heading-title {
+  font-size: 3rem;
+}
+
+.heading-subtitle {
+  font-size: 1.4rem;
+  color: grey;
+}
+
+/* Containers */
+.section {
+  padding: 5rem 0;
+}
+
 .section-heading {
-  margin: 3rem 0;
+  margin: 0 0 5rem 0;
 }
 
-#hero-section {
-  background-size: cover;
-}
-
+/* Components */
 .progress-bar {
   background-color: var(--color-primary);
 }
 
 .btn-primary {
   background-color: var(--color-primary);
+  padding: 1rem 2rem;
+  border: none;
+  margin: 0;
+}
+
+/* Page Section */
+#hero-section {
+  padding: 12rem 0;
+}
+
+#resume-section {
+  background-color: aliceblue;
 }
