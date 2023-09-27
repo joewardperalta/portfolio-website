@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-  --color-primary: rgb(39, 5, 125);
+  --color-primary: #27057d;
 }
 
 /* Global */
@@ -58,6 +58,29 @@ img {
   padding: 1rem 2rem;
   border: none;
   margin: 0;
+}
+
+#logo {
+  position: relative;
+}
+
+#logo-main {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
+#logo-sub {
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  transform: translate(-50%, 0);
+  font-size: 0.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.nav-link {
+  color: white;
 }
 
 /* Page Section */
