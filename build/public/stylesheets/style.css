@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-  --color-primary: #27057d;
+  --color-primary: #6932f5;
 }
 
 /* Global */
@@ -62,21 +62,27 @@ img {
 
 #logo {
   position: relative;
+  line-height: 1;
+  text-shadow: 3px 3px 10px var(--color-primary);
 }
 
 #logo-main {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 800;
+  padding: 3px 0;
   letter-spacing: 0.1rem;
 }
 
 #logo-sub {
   position: absolute;
-  left: 50%;
-  bottom: 3px;
-  transform: translate(-50%, 0);
-  font-size: 0.5rem;
+  right: 0;
+  bottom: 0;
+  font-size: 0.6rem;
   letter-spacing: 0.2rem;
+}
+
+.navbar-brand {
+  padding: 0.5rem;
 }
 
 .nav-link {
