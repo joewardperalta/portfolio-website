@@ -76,6 +76,10 @@ img {
   letter-spacing: 0.2rem;
 }
 
+.navbar {
+  width: 100%;
+  background-color: black;
+}
 .navbar-brand {
   padding: 0.5rem;
 }
@@ -88,7 +92,11 @@ img {
 
 /* Page Section */
 #hero-section {
-  padding: 12rem 0;
+  padding: 15rem 0;
+  background-image: url("../images/coding-wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #resume-section {
