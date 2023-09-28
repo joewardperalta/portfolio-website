@@ -25,7 +25,6 @@ img {
 .title {
   font-size: 4rem;
 }
-
 .subtitle {
   font-size: 1.5rem;
 }
@@ -33,7 +32,6 @@ img {
 .heading-title {
   font-size: 3rem;
 }
-
 .heading-subtitle {
   font-size: 1.4rem;
   color: grey;
@@ -43,7 +41,6 @@ img {
 .section {
   padding: 5rem 0;
 }
-
 .section-heading {
   margin: 0 0 5rem 0;
 }
@@ -65,14 +62,12 @@ img {
   line-height: 1;
   text-shadow: 3px 3px 10px var(--color-primary);
 }
-
 #logo-main {
   font-size: 1.2rem;
   font-weight: 800;
   padding: 3px 0;
   letter-spacing: 0.1rem;
 }
-
 #logo-sub {
   position: absolute;
   right: 0;
@@ -84,9 +79,11 @@ img {
 .navbar-brand {
   padding: 0.5rem;
 }
-
 .nav-link {
   color: white;
+}
+.navbar-toggler {
+  border: none;
 }
 
 /* Page Section */
