@@ -65,7 +65,6 @@ img {
 #logo-main {
   font-size: 1.2rem;
   font-weight: 800;
-  padding: 3px 0;
   letter-spacing: 0.1rem;
 }
 #logo-sub {
@@ -76,19 +75,25 @@ img {
   letter-spacing: 0.2rem;
 }
 
-.navbar-brand {
-  padding: 0.5rem;
+.navbar {
+  width: 100%;
+  background-color: black;
 }
 .nav-link {
   color: white;
 }
 .navbar-toggler {
   border: none;
+  padding: 0;
 }
 
 /************************************* Page Section *************************************/
 #hero-section {
-  padding: 12rem 0;
+  padding: 15rem 0;
+  background-image: url("../images/coding-wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #resume-section {
