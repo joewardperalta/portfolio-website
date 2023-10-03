@@ -23,10 +23,11 @@ img {
 
 /************************************* Typography *************************************/
 .title {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .heading-title {
@@ -87,14 +88,11 @@ img {
   padding: 0;
 }
 
-/************************************* Page Section *************************************/
-#hero-section {
-  padding: 15rem 0;
-  background-image: url("../images/coding-wallpaper.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+.avatar {
+  width: 256px;
 }
+
+/************************************* Page Section *************************************/
 
 #resume-section {
   background-color: aliceblue;
