@@ -15,6 +15,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
+  font-weight: 500;
 }
 
 img {
@@ -51,43 +52,68 @@ img {
   background-color: var(--color-primary);
 }
 
+.btn {
+  border-radius: 40px;
+  padding: 1rem 2rem;
+  font-weight: 500;
+}
+
 .btn-primary {
   background-color: var(--color-primary);
-  padding: 1rem 2rem;
   border: none;
   margin: 0;
+  color: white;
+}
+
+.btn-secondary {
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+  margin: 0;
+  color: var(--color-primary);
+}
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
 #logo {
   position: relative;
   line-height: 1;
-  text-shadow: 3px 3px 10px var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 800;
 }
 #logo-main {
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+  letter-spacing: -2;
 }
 #logo-sub {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -4px;
   font-size: 0.6rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 
 .navbar {
   width: 100%;
-  background-color: black;
+  font-weight: 500;
+  padding: 2rem 0;
 }
-.nav-link {
-  color: white;
-}
-.navbar-toggler {
+.navbar .navbar-toggler {
   border: none;
   padding: 0;
 }
-
+.navbar .nav-item .nav-link {
+  display: inline-block;
+  color: black;
+  margin: 0 0.5rem;
+}
+.navbar .nav-item .btn-secondary {
+  margin: 0 0.5rem;
+}
+.navbar .nav-item:last-child .btn-secondary {
+  margin-right: 0;
+}
 .avatar {
   width: 256px;
 }
