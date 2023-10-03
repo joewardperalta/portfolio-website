@@ -17,6 +17,10 @@ app.get("/", (req, res) => {
   res.render("index", { title: "Joeward Peralta", skills: skills.skills });
 });
 
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+
 app.listen(HTTP_PORT, () => {
   console.log(`Listening to port ${HTTP_PORT}`);
 });
