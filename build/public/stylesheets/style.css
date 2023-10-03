@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-/* Variables */
+/************************************* Variables *************************************/
 :root {
   --color-primary: #6932f5;
 }
 
-/* Global */
+/************************************* Global *************************************/
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +21,7 @@ img {
   width: 100%;
 }
 
-/* Typography */
+/************************************* Typography *************************************/
 .title {
   font-size: 4rem;
 }
@@ -37,7 +37,7 @@ img {
   color: grey;
 }
 
-/* Containers */
+/************************************* Containers *************************************/
 .section {
   padding: 5rem 0;
 }
@@ -45,7 +45,7 @@ img {
   margin: 0 0 5rem 0;
 }
 
-/* Components */
+/************************************* Components *************************************/
 .progress-bar {
   background-color: var(--color-primary);
 }
@@ -86,7 +86,7 @@ img {
   border: none;
 }
 
-/* Page Section */
+/************************************* Page Section *************************************/
 #hero-section {
   padding: 12rem 0;
 }
@@ -95,7 +95,7 @@ img {
   background-color: aliceblue;
 }
 
-/* Media Queries */
+/************************************* Media Queries *************************************/
 @media screen and (max-width: 576px) {
   .title {
     font-size: 2.4rem;
