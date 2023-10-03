@@ -103,18 +103,23 @@ img {
   border: none;
   padding: 0;
 }
-.navbar .nav-item .nav-link {
+.navbar .navbar-toggler-icon {
+  font-size: 1.8rem;
+}
+
+.navbar .nav-link {
   display: inline-block;
   color: black;
   margin: 0 0.5rem;
 }
-.navbar .nav-item .btn-secondary {
+.navbar .btn-secondary {
   margin: 0 0.5rem;
 }
 .navbar .nav-item:last-child .btn-secondary {
   margin-right: 0;
   padding: 0.5rem 1rem;
 }
+
 .avatar {
   max-width: 256px;
 }
@@ -149,9 +154,6 @@ img {
   color: white;
   margin-bottom: 2rem;
   font-weight: 700;
-}
-#about-section #about-body #profile-picture {
-  padding: 0 50px 0 0;
 }
 
 /************************************* Media Queries *************************************/
