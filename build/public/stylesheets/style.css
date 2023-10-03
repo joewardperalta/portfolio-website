@@ -16,6 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 500;
+  line-height: 1.7;
 }
 
 img {
@@ -28,15 +29,14 @@ img {
   font-weight: 600;
 }
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .heading-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .heading-subtitle {
-  font-size: 1.4rem;
-  color: grey;
+  font-size: 1.2rem;
 }
 
 /************************************* Containers *************************************/
@@ -115,13 +115,42 @@ img {
   margin-right: 0;
 }
 .avatar {
-  width: 256px;
+  max-width: 256px;
 }
 
 /************************************* Page Section *************************************/
 
 #resume-section {
   background-color: aliceblue;
+}
+
+#about-section {
+  background-color: var(--color-primary);
+  position: relative;
+}
+
+#about-section .section-heading {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+}
+#about-section .section-heading p {
+  margin: 0;
+}
+
+#about-section #about-body {
+  color: white;
+}
+#about-section #about-body h3 {
+  color: white;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+#about-section #about-body #profile-picture {
+  padding: 0 50px 0 0;
 }
 
 /************************************* Media Queries *************************************/
