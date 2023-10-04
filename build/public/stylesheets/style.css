@@ -140,7 +140,6 @@ img {
   background-color: var(--color-primary);
   position: relative;
 }
-
 #about-section .section-heading {
   position: absolute;
   top: 0;
@@ -152,7 +151,6 @@ img {
 #about-section .section-heading p {
   margin: 0;
 }
-
 #about-section #about-body {
   color: white;
 }
@@ -160,6 +158,40 @@ img {
   color: white;
   margin-bottom: 2rem;
   font-weight: 700;
+}
+
+#footer {
+  padding-top: 5rem;
+}
+#footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+#footer ul li {
+  padding: 0.1rem 0;
+}
+#footer ul li a {
+  color: white;
+}
+#footer #categories ul li a {
+  text-decoration: none;
+}
+#footer h6 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.2;
+}
+
+#footer .row {
+  border-bottom: 2px solid grey;
+}
+#footer .row:first-child {
+  padding-bottom: 4rem;
+}
+#footer .row:last-child {
+  border-bottom: none;
+  padding: 2rem 0;
 }
 
 /************************************* Media Queries *************************************/
