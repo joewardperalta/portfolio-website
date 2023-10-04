@@ -15,28 +15,12 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.7;
 }
 
 img {
   width: 100%;
-}
-
-/************************************* Typography *************************************/
-.title {
-  font-size: 3rem;
-  font-weight: 600;
-}
-.subtitle {
-  font-size: 1.5rem;
-}
-
-.heading-title {
-  font-size: 2.5rem;
-}
-.heading-subtitle {
-  font-size: 1.2rem;
 }
 
 /************************************* Containers *************************************/
@@ -97,7 +81,7 @@ img {
 .navbar {
   width: 100%;
   font-weight: 500;
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 .navbar .navbar-toggler {
   border: none;
@@ -125,6 +109,28 @@ img {
 }
 
 /************************************* Page Section *************************************/
+
+#hero-section #hero-content {
+  position: relative;
+}
+.window-left {
+  position: absolute;
+  max-width: 192px;
+  z-index: -2;
+}
+.window-right {
+  position: absolute;
+  max-width: 192px;
+  z-index: -2;
+}
+.whiteboard {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%);
+  max-width: 256px;
+  z-index: -1;
+}
 
 #resume-section {
   background-color: aliceblue;
@@ -157,15 +163,9 @@ img {
 }
 
 /************************************* Media Queries *************************************/
+
+/* Extra Small Devices */
 @media screen and (max-width: 576px) {
-  .title {
-    font-size: 2.4rem;
-  }
-
-  .subtitle {
-    font-size: 1.3rem;
-  }
-
   .heading-title {
     font-size: 2.2rem;
   }
@@ -180,5 +180,58 @@ img {
 
   #hero-section {
     padding: 5rem 0;
+  }
+
+  .window-left {
+    display: none;
+  }
+  .window-right {
+    display: none;
+  }
+}
+
+/* Small Devices */
+@media screen and (min-width: 576px) {
+  .window-left {
+    display: none;
+  }
+  .window-right {
+    display: none;
+  }
+}
+
+/* Medium Devices */
+@media screen and (min-width: 768px) {
+  .window-left {
+    display: none;
+  }
+  .window-right {
+    display: none;
+  }
+}
+
+/* Large Devices */
+@media screen and (min-width: 992px) {
+  .window-left {
+    display: inline;
+    left: 10%;
+  }
+  .window-right {
+    display: inline;
+    right: 10%;
+  }
+}
+
+/* Extra Large Devices */
+@media screen and (min-width: 1200px) {
+}
+
+/* Extra Extra Large Devices */
+@media screen and (min-width: 1400px) {
+  .window-left {
+    left: 10%;
+  }
+  .window-right {
+    right: 10%;
   }
 }
