@@ -21,6 +21,10 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
+app.use((req, res) => {
+  res.render("under-construction");
+});
+
 app.listen(HTTP_PORT, () => {
   console.log(`Listening to port ${HTTP_PORT}`);
 });

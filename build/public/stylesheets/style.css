@@ -182,7 +182,6 @@ img {
   font-weight: 700;
   letter-spacing: 1.2;
 }
-
 #footer .row {
   border-bottom: 2px solid grey;
 }
@@ -192,6 +191,14 @@ img {
 #footer .row:last-child {
   border-bottom: none;
   padding: 2rem 0;
+}
+
+#under-development-section {
+  text-align: center;
+}
+#under-development-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 /************************************* Media Queries *************************************/
