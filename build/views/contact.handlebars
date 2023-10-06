@@ -4,16 +4,16 @@
       <div class="col-lg-6">
         <div class="section-heading">
           <h2>Contact Me</h2>
-          <p>If you have any questions, you can reach me either by email or
-            connect with me through my social links.</p>
+          <p>If you have any questions, you can reach me on either of the
+            following platform listed below.</p>
         </div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row justify-content-center">
       {{! Social links }}
-      <div class="col-lg-6 mb-5 mb-lg-0" id="social-connection">
-        <div class="row g-3 text-center text-lg-start">
+      <div class="col-lg-6" id="social-connection">
+        <div class="row g-3 text-center">
           <div class="col-12">
             <h5>Connect on LinkedIn</h5>
             <a
@@ -30,6 +30,11 @@
           </div>
 
           <div class="col-12">
+            <h5>Email Support</h5>
+            <p>joeward_peralta@outlook.com</p>
+          </div>
+
+          <div class="col-12">
             <h5>Phone Support</h5>
             <p>Hours: 9am - 5pm (EST), Saturday</p>
             <p>647-901-3040</p>
@@ -38,8 +43,13 @@
       </div>
 
       {{! Form }}
-      <div class="col-lg-6">
-        <form class="row g-3" method="post">
+      {{! <div class="col-lg-6">
+        <form
+          class="row g-3"
+          action="mailto:joeward_peralta@outlook.com"
+          method="post"
+          enctype="text/plain"
+        >
           <div class="col-md-6">
             <label for="firstname" class="form-label">First name</label>
             <input
@@ -90,7 +100,7 @@
             <button type="submit" class="btn btn-primary">Send message</button>
           </div>
         </form>
-      </div>
+      </div> }}
     </div>
   </div>
 </section>
