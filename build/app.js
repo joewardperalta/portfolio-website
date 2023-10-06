@@ -1,5 +1,7 @@
 const express = require("express");
 const { engine } = require("express-handlebars");
+var nodemailer = require("nodemailer");
+var bodyParser = require("body-parser");
 
 const skills = require("./data/skills.json");
 
@@ -10,6 +12,8 @@ app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
 app.set("views", "./build/views");
 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(express.static("build/public"));
 
 // Sends the homepage
@@ -17,7 +21,8 @@ app.get("/", (req, res) => {
   res.render("index", { title: "Joeward Peralta", skills: skills.skills });
 });
 
-app.get("/contact", (req, res) => {
+// Render contact page
+app.get("/contact", (req, res, next) => {
   res.render("contact");
 });
 
