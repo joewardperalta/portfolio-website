@@ -43,6 +43,10 @@ img {
   margin-bottom: 5rem;
 }
 
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
 /************************************* Containers *************************************/
 .section {
   padding: 5rem 0;
@@ -137,6 +141,10 @@ img {
 
 /************************************* Page Section *************************************/
 
+#hero-section .title {
+  text-transform: uppercase;
+}
+
 #experience-section {
   background-color: var(--color-primary);
   color: white;
@@ -160,7 +168,6 @@ img {
 }
 
 #resume-section {
-  background-color: aliceblue;
 }
 
 #footer {
