@@ -1,27 +1,53 @@
 {{! Hero section }}
 <section class="section" id="hero-section">
   <div class="container" id="hero-content">
-    <div class="row align-items-center text-center">
-      <div class="col-12 mb-5" id="hero-description">
-        <div class="text-center">
-          <h1 class="display-4 fw-bold my-3">Full Stack Web Developer</h1>
-          <p class="fs-4 fw-semibold">
-            I build both static and dynamic websites.
+    <div class="row align-items-center text-center text-lg-start">
+      <div class="col-lg-6 mb-5 mb-lg-0" id="hero-description">
+        <header>
+          <h1 class="title">Hi, I'm Joeward Peralta.</h1>
+          <p class="sub-title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+            atque maxime accusantium exercitationem sit illum error. Ipsa quas
+            consectetur veniam corporis eos dolore non consequuntur minima
+            quisquam, soluta sunt nam.
           </p>
-        </div>
-      </div>
-
-      <div class="col-12 mb-5">
-        <img class="avatar" src="/images/hacker.png" alt="hacker icon" />
-        <img class="window-left" src="/images/window.png" alt="window" />
-        <img class="window-right" src="/images/window.png" alt="window" />
-        <img class="whiteboard" src="/images/whiteboard.png" alt="whiteboard" />
-      </div>
-
-      <div class="col">
-        <a class="btn btn-primary" href="#about-section">Learn more about me
+        </header>
+        <a class="btn btn-primary" href="#about-section">Learn more
           <i class="fa-solid fa-arrow-down ms-2" style="color: #ffffff;"></i>
         </a>
+      </div>
+
+      <div class="col text-lg-end">
+        <img
+          class="avatar"
+          src="/images/joeward-peralta-profile-picture.png"
+          alt="joeward peralta profile"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section shadow" id="experience-section">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col">
+        <div>
+          <h3>1+</h3>
+          <p>YEAR EXPERIENCE</p>
+        </div>
+      </div>
+      <div class="col">
+        <div>
+          <h3>500+</h3>
+          <p>HOURS STUDYING</p>
+        </div>
+      </div>
+      <div class="col">
+        <div>
+          <h3>1000+</h3>
+          <p>HOURS CREATING</p>
+        </div>
       </div>
     </div>
   </div>
@@ -30,26 +56,28 @@
 {{! About section }}
 <section class="section" id="about-section">
   <div class="container">
-    <div class="row align-items-center" id="about-body">
-      <div class="col-lg-6 mb-4 mb-lg-0 pe-lg-5" id="profile-picture">
-        <img
-          src="/images/profile.jpg"
-          alt="My profile picture wearing blue suit"
-        />
-      </div>
-
-      <div class="col-lg-6" id="about-description">
-        <h3>My name is Joeward Peralta.</h3>
-        <p>
-          I'm a full-stack web developer with knowledge of various programming
-          languages which are: HTML, CSS, JavaScript, C, and C++. I also have
-          expertise in different frameworks and libraries such as Bootstrap,
-          Next.js, React.js, Express.js. Considering databases, I also have a
-          fundamental knowledge of MongoDB and SQL. I'm a full-time student
-          studying at Seneca College School of Software Design &amp; Data
-          Science. I'm hoping to graduate in the year 2024 of the month
-          September.
+    <div
+      class="row justify-content-center text-center"
+      id="about-section-heading"
+    >
+      <div class="col-6">
+        <h2 class="heading">Learn about me</h2>
+        <p class="sub-heading">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel modi
+          quo, exercitationem alias!
         </p>
+      </div>
+    </div>
+
+    <div class="row" id="about-section-body">
+      <div class="col">
+        Column 1
+      </div>
+      <div class="col">
+        Column 2
+      </div>
+      <div class="col">
+        Column 3
       </div>
     </div>
   </div>
@@ -59,7 +87,6 @@
 <section class="section" id="resume-section">
   <div class="container">
     <div class="row justify-content-center">
-      {{! Resume section heading }}
       <div class="col-lg-6">
         <div class="section-heading text-center">
           <h2 class="heading-title">My Resume</h2>
@@ -83,7 +110,7 @@
             class="btn btn-primary"
             href="/files/resume.pdf"
             download=""
-          >Download here
+          >Download
             <i class="fa-solid fa-file-arrow-down ms-2"></i>
           </a>
         </div>

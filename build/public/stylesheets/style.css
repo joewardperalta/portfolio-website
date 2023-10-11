@@ -3,6 +3,8 @@
 /************************************* Variables *************************************/
 :root {
   --color-primary: #6932f5;
+
+  --border-soft: 5px;
 }
 
 /************************************* Global *************************************/
@@ -23,6 +25,24 @@ img {
   width: 100%;
 }
 
+/************************************* Typhoraphy *************************************/
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.sub-title {
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-weight: 600;
+}
+
+.sub-heading {
+  margin-bottom: 5rem;
+}
+
 /************************************* Containers *************************************/
 .section {
   padding: 5rem 0;
@@ -32,14 +52,16 @@ img {
 }
 
 /************************************* Components *************************************/
+
+/* Progress bar */
 .progress-bar {
   background-color: var(--color-primary);
 }
 
+/* Buttons */
 .btn {
-  border-radius: 40px;
-  padding: 1rem 2rem;
-  font-weight: 500;
+  border-radius: var(--border-soft);
+  padding: 0.8rem 2.4rem;
 }
 
 .btn-primary {
@@ -47,6 +69,7 @@ img {
   border: none;
   margin: 0;
   color: white;
+  font-weight: 500;
 }
 
 .btn-secondary {
@@ -54,12 +77,14 @@ img {
   background-color: transparent;
   margin: 0;
   color: var(--color-primary);
+  font-weight: 500;
 }
 .btn-secondary:hover {
   background-color: var(--color-primary);
   border: 2px solid var(--color-primary);
 }
 
+/* Logo */
 #logo {
   position: relative;
   line-height: 1;
@@ -78,9 +103,9 @@ img {
   letter-spacing: 0.1rem;
 }
 
+/* Navbar */
 .navbar {
   width: 100%;
-  font-weight: 500;
   padding-top: 2rem;
 }
 .navbar .navbar-toggler {
@@ -104,60 +129,38 @@ img {
   padding: 0.5rem 1rem;
 }
 
+/* Avatar */
 .avatar {
-  max-width: 256px;
+  max-width: 500px;
+  border-radius: 100%;
 }
 
 /************************************* Page Section *************************************/
 
-#hero-section #hero-content {
-  position: relative;
+#experience-section {
+  background-color: var(--color-primary);
+  color: white;
 }
-.window-left {
-  position: absolute;
-  max-width: 192px;
-  z-index: -2;
+#experience-section p {
+  margin: 0;
 }
-.window-right {
-  position: absolute;
-  max-width: 192px;
-  z-index: -2;
+#experience-section {
+  margin: 0;
 }
-.whiteboard {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%);
-  max-width: 256px;
-  z-index: -1;
+#experience-section .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#experience-section img {
+  max-width: 100px;
+}
+
+#about-section {
 }
 
 #resume-section {
   background-color: aliceblue;
-}
-
-#about-section {
-  background-color: var(--color-primary);
-  position: relative;
-}
-#about-section .section-heading {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 2rem;
-}
-#about-section .section-heading p {
-  margin: 0;
-}
-#about-section #about-body {
-  color: white;
-}
-#about-section #about-body h3 {
-  color: white;
-  margin-bottom: 2rem;
-  font-weight: 700;
 }
 
 #footer {
