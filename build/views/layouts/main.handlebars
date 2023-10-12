@@ -18,12 +18,12 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
 
-        <a class="navbar-brand" href="/">
+        <div class="navbar-brand">
           <div id="logo">
             <div id="logo-main">Joeward</div>
             <div id="logo-sub">peralta</div>
           </div>
-        </a>
+        </div>
 
         <button
           class="navbar-toggler"
@@ -37,24 +37,32 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav mb-2 mt-2 mb-lg-0 mt-lg-0 text-center justify-content-end align-items-center"
           >
-            <ul
-              class="navbar-nav mb-2 mt-2 mb-lg-0 mt-lg-0 text-center justify-content-end align-items-center"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="/resume">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-secondary" href="/contact">Contact Me</a>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-secondary" href="/contact">Contact Me</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     {{{body}}}
 
@@ -65,11 +73,14 @@
             <h6>Categories</h6>
             <ul>
               <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/projects">Projects</a></li>
               <li><a href="/services">Services</a></li>
               <li><a href="/contact">Contact Me</a></li>
             </ul>
           </div>
 
+          {{! Credits }}
           <div class="col" id="credits">
             <h6>Credits</h6>
             <ul>
@@ -91,10 +102,59 @@
                   title="javascript icons"
                 >Javascript icons created by Freepik - Flaticon</a>
               </li>
+              <li>
+                Photo by
+                <a
+                  href="https://unsplash.com/@heftiba?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Toa Heftiba</a>
+                on
+                <a
+                  href="https://unsplash.com/photos/KQ1n6HzSahY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a>
+              </li>
+              <li>
+                Photo by
+                <a
+                  href="https://unsplash.com/@craftedbygc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unseen Studio</a>
+                on
+                <a
+                  href="https://unsplash.com/photos/s9CC2SKySJM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a>
+              </li>
+              <li>
+                Photo by
+                <a
+                  href="https://unsplash.com/@microsoft365?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Microsoft 365</a>
+                on
+                <a
+                  href="https://unsplash.com/photos/MFK0JpFU13U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.flaticon.com/free-icons/star"
+                  title="star icons"
+                >Star icons created by Pixel perfect - Flaticon</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.flaticon.com/free-icons/user"
+                  title="user icons"
+                >User icons created by Vectors Market - Flaticon</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.flaticon.com/free-icons/female"
+                  title="female icons"
+                >Female icons created by popcornarts - Flaticon</a>
+              </li>
             </ul>
           </div>
         </div>
 
+        {{! Copyright }}
         <div class="row">
           <div class="col">
             Copyright &copy; 2023 Joeward Peralta
