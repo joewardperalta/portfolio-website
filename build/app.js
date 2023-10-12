@@ -1,6 +1,5 @@
 const express = require("express");
 const { engine } = require("express-handlebars");
-var nodemailer = require("nodemailer");
 var bodyParser = require("body-parser");
 
 const skills = require("./data/skills.json");

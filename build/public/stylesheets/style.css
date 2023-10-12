@@ -30,16 +30,16 @@ img {
   font-size: 3rem;
   font-weight: 700;
 }
-
 .sub-title {
   margin-bottom: 2rem;
 }
 
 .heading {
+  font-size: 2rem;
   font-weight: 600;
 }
-
 .sub-heading {
+  font-size: 1rem;
   margin-bottom: 5rem;
 }
 
@@ -49,8 +49,13 @@ img {
 
 /************************************* Containers *************************************/
 .section {
+  padding: 8rem 0;
+}
+
+.sub-section {
   padding: 5rem 0;
 }
+
 .section-heading {
   margin: 0 0 5rem 0;
 }
@@ -141,16 +146,19 @@ img {
 
 /************************************* Page Section *************************************/
 
+/* Hero section */
 #hero-section .title {
   text-transform: uppercase;
 }
 
+/* Experience section */
 #experience-section {
   background-color: var(--color-primary);
   color: white;
 }
 #experience-section p {
   margin: 0;
+  text-transform: uppercase;
 }
 #experience-section {
   margin: 0;
@@ -164,12 +172,19 @@ img {
   max-width: 100px;
 }
 
-#about-section {
+/* Skills section */
+#skills-section #skills-list .col {
+  padding: 0;
+}
+#skills-section #skills-list .card {
+  border: none;
+  padding: 1.5rem 0;
+}
+#skills-section #skills-list .card i {
+  color: var(--color-primary);
 }
 
-#resume-section {
-}
-
+/* Contact section */
 #contact-section form .form-control {
   border: 2px solid grey;
 }
@@ -188,6 +203,7 @@ img {
   border-bottom: 2px solid grey;
 }
 
+/* Footer */
 #footer {
   padding-top: 5rem;
 }
@@ -221,6 +237,7 @@ img {
   padding: 2rem 0;
 }
 
+/* Under development section */
 #under-development-section {
   text-align: center;
 }
