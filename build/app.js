@@ -30,16 +30,14 @@ app.use(express.static("build/public"));
 app.use("/", indexRouter);
 
 // Render about page
-app.use("/about", aboutRouter);
+app.use("/", aboutRouter);
 
-// Render projects page
-// app.use("/projects", projectsRouter);
+// DO: Render projects page
 
-// Render services page
-// app.use("/services", servicesRouter);
+// Do: Render services page
 
 // Render contact page
-app.use("/contact", contactRouter);
+app.use("/", contactRouter);
 
 // Render under construction page
 app.use((req, res) => {
