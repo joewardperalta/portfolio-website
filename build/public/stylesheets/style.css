@@ -136,13 +136,6 @@ img {
   color: black;
   margin: 0 0.5rem;
 }
-.navbar .btn-secondary {
-  margin: 0 0.5rem;
-}
-.navbar .nav-item:last-child .btn-secondary {
-  margin-right: 0;
-  padding: 0.5rem 1rem;
-}
 
 /* Avatar */
 .avatar {
