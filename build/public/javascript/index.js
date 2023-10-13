@@ -17,3 +17,5 @@ const formControl = document.querySelectorAll(
     }
   });
 });
+
+fetch("/api/projects").then(data);
