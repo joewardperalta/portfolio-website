@@ -41,6 +41,7 @@ app.use("/about", aboutRouter);
 // Render contact page
 app.use("/contact", contactRouter);
 
+// Render under construction page
 app.use((req, res) => {
   res.render("under-construction");
 });
