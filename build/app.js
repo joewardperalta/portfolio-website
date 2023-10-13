@@ -32,11 +32,11 @@ app.use("/", indexRouter);
 // Render about page
 app.use("/", aboutRouter);
 
-// DO: Render projects page
+// TODO: Use router from projects api
 
-// Do: Render services page
+// TODO: Use router from services api
 
-// Render contact page
+// Use router from contact api
 app.use("/", contactRouter);
 
 // Render under construction page
