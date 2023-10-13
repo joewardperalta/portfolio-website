@@ -1,1 +1,182 @@
-<html lang="en"> <head> <meta charset="UTF-8"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/>{{! Bootstrap 5.3.2 css}}<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>{{! External css}}<link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/> <title>{{title}}</title> </head> <body> <nav class="navbar navbar-expand-lg"> <div class="container"> <div class="navbar-brand"> <div id="logo"> <div id="logo-main">Joeward</div><div id="logo-sub">peralta</div></div></div><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" > <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" > <ul class="navbar-nav mb-2 mt-2 mb-lg-0 mt-lg-0 text-center justify-content-end align-items-center" > <li class="nav-item"> <a class="nav-link" href="/">Home</a> </li><li class="nav-item"> <a class="nav-link" href="/about">About</a> </li><li class="nav-item"> <a class="nav-link" href="/projects">Projects</a> </li><li class="nav-item"> <a class="nav-link" href="/services">Services</a> </li><li class="nav-item"> <a class="btn btn-secondary" href="/contact">Contact Me</a> </li></ul> </div></div></nav>{{{body}}}<footer class="bg-dark" id="footer"> <div class="container text-white"> <div class="row"> <div class="col" id="categories"> <h6>Categories</h6> <ul> <li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/projects">Projects</a></li><li><a href="/services">Services</a></li><li><a href="/contact">Contact Me</a></li></ul> </div>{{! Credits}}<div class="col" id="credits"> <h6>Credits</h6> <ul> <li> <a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons" >Html 5 icons created by Freepik - Flaticon</a> </li><li> <a href="https://www.flaticon.com/free-icons/css-3" title="css 3 icons" >Css 3 icons created by Freepik - Flaticon</a> </li><li> <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons" >Javascript icons created by Freepik - Flaticon</a> </li><li> Photo by <a href="https://unsplash.com/@heftiba?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" >Toa Heftiba</a> on <a href="https://unsplash.com/photos/KQ1n6HzSahY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" >Unsplash</a> </li><li> Photo by <a href="https://unsplash.com/@craftedbygc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" >Unseen Studio</a> on <a href="https://unsplash.com/photos/s9CC2SKySJM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" >Unsplash</a> </li><li> Photo by <a href="https://unsplash.com/@microsoft365?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" >Microsoft 365</a> on <a href="https://unsplash.com/photos/MFK0JpFU13U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" >Unsplash</a> </li><li> <a href="https://www.flaticon.com/free-icons/star" title="star icons" >Star icons created by Pixel perfect - Flaticon</a> </li><li> <a href="https://www.flaticon.com/free-icons/user" title="user icons" >User icons created by Vectors Market - Flaticon</a> </li><li> <a href="https://www.flaticon.com/free-icons/female" title="female icons" >Female icons created by popcornarts - Flaticon</a> </li></ul> </div></div>{{! Copyright}}<div class="row"> <div class="col"> Copyright &copy; 2023 Joeward Peralta </div></div></div></footer>{{! Bootstrap 5.3.2 bundle}}<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" ></script>{{! Font awesome kit}}<script src="https://kit.fontawesome.com/d924478ec2.js" crossorigin="anonymous" ></script>{{! External js file}}<script src="/javascript/main.js"></script> </body></html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Bootstrap 5.3.2 css }}
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    {{! External css }}
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+
+        <div class="navbar-brand">
+          <div id="logo">
+            <div id="logo-main">Joeward</div>
+            <div id="logo-sub">peralta</div>
+          </div>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav mb-2 mt-2 mb-lg-0 mt-lg-0 text-center justify-content-end align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-secondary" href="/contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {{{body}}}
+
+    <footer class="bg-dark" id="footer">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col" id="categories">
+            <h6>Categories</h6>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/projects">Projects</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/contact">Contact Me</a></li>
+            </ul>
+          </div>
+
+          {{! Credits }}
+          <div class="col" id="credits">
+            <h6>Credits</h6>
+            <ul>
+              <li>
+                <a
+                  href="https://www.flaticon.com/free-icons/html-5"
+                  title="html 5 icons"
+                >Html 5 icons created by Freepik - Flaticon</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.flaticon.com/free-icons/css-3"
+                  title="css 3 icons"
+                >Css 3 icons created by Freepik - Flaticon</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.flaticon.com/free-icons/javascript"
+                  title="javascript icons"
+                >Javascript icons created by Freepik - Flaticon</a>
+              </li>
+              <li>
+                Photo by
+                <a
+                  href="https://unsplash.com/@heftiba?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Toa Heftiba</a>
+                on
+                <a
+                  href="https://unsplash.com/photos/KQ1n6HzSahY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a>
+              </li>
+              <li>
+                Photo by
+                <a
+                  href="https://unsplash.com/@craftedbygc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unseen Studio</a>
+                on
+                <a
+                  href="https://unsplash.com/photos/s9CC2SKySJM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a>
+              </li>
+              <li>
+                Photo by
+                <a
+                  href="https://unsplash.com/@microsoft365?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Microsoft 365</a>
+                on
+                <a
+                  href="https://unsplash.com/photos/MFK0JpFU13U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.flaticon.com/free-icons/star"
+                  title="star icons"
+                >Star icons created by Pixel perfect - Flaticon</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.flaticon.com/free-icons/user"
+                  title="user icons"
+                >User icons created by Vectors Market - Flaticon</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.flaticon.com/free-icons/female"
+                  title="female icons"
+                >Female icons created by popcornarts - Flaticon</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {{! Copyright }}
+        <div class="row">
+          <div class="col">
+            Copyright &copy; 2023 Joeward Peralta
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {{! Bootstrap 5.3.2 bundle }}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    {{! Font awesome kit }}
+    <script
+      src="https://kit.fontawesome.com/d924478ec2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    {{! External js file }}
+    <script src="/javascript/main.js"></script>
+  </body>
+</html>
