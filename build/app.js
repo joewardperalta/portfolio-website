@@ -21,6 +21,11 @@ app.get("/", (req, res) => {
   res.render("index", { title: "Joeward Peralta", skills: skills.skills });
 });
 
+// Render about page
+app.get("/about", (req, res, next) => {
+  res.render("about");
+});
+
 // Render contact page
 app.get("/contact", (req, res, next) => {
   res.render("contact");
