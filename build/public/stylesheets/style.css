@@ -3,8 +3,12 @@
 /************************************* Variables *************************************/
 :root {
   --color-primary: #6932f5;
+  --color-secondary: #e9e1ff;
 
+  --border: 2px solid var(--color-primary);
   --border-soft: 5px;
+
+  --shadow: 0 10px 20px 3px rgba(0, 0, 0, 0.2);
 }
 
 /************************************* Global *************************************/
@@ -37,10 +41,11 @@ img {
 .heading {
   font-size: 2rem;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 .sub-heading {
   font-size: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .text-primary {
@@ -48,12 +53,13 @@ img {
 }
 
 /************************************* Containers *************************************/
+
 .section {
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 .sub-section {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .section-heading {
@@ -82,7 +88,7 @@ img {
 }
 
 .btn-secondary {
-  border: 2px solid var(--color-primary);
+  border: var(--border);
   background-color: transparent;
   margin: 0;
   color: var(--color-primary);
@@ -90,7 +96,7 @@ img {
 }
 .btn-secondary:hover {
   background-color: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  border: var(--border);
 }
 
 /* Logo */
@@ -130,13 +136,6 @@ img {
   color: black;
   margin: 0 0.5rem;
 }
-.navbar .btn-secondary {
-  margin: 0 0.5rem;
-}
-.navbar .nav-item:last-child .btn-secondary {
-  margin-right: 0;
-  padding: 0.5rem 1rem;
-}
 
 /* Avatar */
 .avatar {
@@ -144,7 +143,23 @@ img {
   border-radius: 100%;
 }
 
-/************************************* Page Section *************************************/
+/* Card */
+.card {
+  border: none;
+}
+.card .card-body {
+  padding: 2rem 1.5rem;
+}
+.card img {
+  border-radius: var(--border-soft);
+}
+.card .card-title {
+  font-weight: 700;
+}
+
+/************************************* Page/Section *************************************/
+
+/************************************* Home Page *************************************/
 
 /* Hero section */
 #hero-section .title {
@@ -155,6 +170,7 @@ img {
 #experience-section {
   background-color: var(--color-primary);
   color: white;
+  box-shadow: var(--shadow);
 }
 #experience-section p {
   margin: 0;
@@ -173,18 +189,67 @@ img {
 }
 
 /* Skills section */
-#skills-section #skills-list .col {
-  padding: 0;
-}
 #skills-section #skills-list .card {
   border: none;
-  padding: 1.5rem 0;
+  padding: 0;
+}
+#skills-section #skills-list .card-body:first-child {
+  padding-left: 0;
+}
+#skills-section #skills-list .card-body:last-child {
+  padding-right: 0;
 }
 #skills-section #skills-list .card i {
   color: var(--color-primary);
 }
 
-/* Contact section */
+/* Resume section */
+#resume-section {
+  background-color: var(--color-secondary);
+}
+#resume-section .section-heading {
+  margin-bottom: 0;
+}
+#resume-section img {
+  box-shadow: var(--shadow);
+}
+
+/* Project section */
+
+/* Testimonial section */
+#testimonial-section {
+  background-color: var(--color-primary);
+  color: white;
+}
+#testimonial-section .sub-heading {
+  margin-bottom: 6rem;
+}
+#testimonial-section #testimonial-list .card {
+  border: none;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+#testimonial-section #testimonial-list .card .avatar {
+  width: 100px;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#testimonial-section #testimonial-list .card .rating {
+  margin-top: 3rem;
+}
+#testimonial-section #testimonial-list .card .rating img {
+  width: 25px;
+}
+#testimonial-section #testimonial-list .card .card-title {
+  margin-top: 2rem;
+}
+
+/************************************* About Page *************************************/
+
+/************************************* Contact Page *************************************/
+
 #contact-section form .form-control {
   border: 2px solid grey;
 }
@@ -250,68 +315,43 @@ img {
 
 /* Extra Small Devices */
 @media screen and (max-width: 576px) {
-  .heading-title {
-    font-size: 2.2rem;
-  }
-
-  .heading-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .section-heading {
-    margin: 0 0 2.5rem 0;
-  }
-
   #hero-section {
     padding: 5rem 0;
   }
 
-  .window-left {
-    display: none;
-  }
-  .window-right {
-    display: none;
+  #testimonial-section #testimonial-list .card {
+    margin-bottom: 5rem;
   }
 }
 
 /* Small Devices */
 @media screen and (min-width: 576px) {
-  .window-left {
-    display: none;
-  }
-  .window-right {
-    display: none;
+  #testimonial-section #testimonial-list .card {
+    margin-bottom: 5rem;
   }
 }
 
 /* Medium Devices */
 @media screen and (min-width: 768px) {
-  .window-left {
-    display: none;
-  }
-  .window-right {
-    display: none;
-  }
 }
 
 /* Large Devices */
 @media screen and (min-width: 992px) {
-  .window-left {
-    display: inline;
-    left: 10%;
-  }
-  .window-right {
-    display: inline;
-    right: 10%;
-  }
 }
 
 /* Extra Large Devices */
 @media screen and (min-width: 1200px) {
+  #testimonial-section #testimonial-list .card {
+    margin-bottom: 0;
+  }
 }
 
 /* Extra Extra Large Devices */
 @media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1180px;
+  }
+
   .window-left {
     left: 10%;
   }
