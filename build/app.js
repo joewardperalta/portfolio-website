@@ -4,12 +4,8 @@ const { engine } = require("express-handlebars");
 const bodyParser = require("body-parser");
 const path = require("path");
 
-// Routers
-const indexRouter = require("./routes/index");
-const aboutRouter = require("./routes/about");
-const projectsRouter = require("./routes/projects");
-const servicesRouter = require("./routes/services");
-const contactRouter = require("./routes/contact");
+// Api
+const projectsRouter = require("./api/projects");
 
 // Express app
 const app = express();
@@ -27,17 +23,28 @@ app.use(express.static("build/public"));
 /*********************** Routes ***********************/
 
 // Render home page
-app.use("/", indexRouter);
+app.get("/", function (req, res) {
+  res.render("index", { title: "Joeward Peralta" });
+});
 
 // Render about page
-app.use("/", aboutRouter);
+app.get("/about", function (req, res) {
+  res.render("about");
+});
+
+// Render contact page
+app.get("/contact", function (req, res, next) {
+  res.render("contact");
+});
+
+// Render projects page
+app.get("/projects", function (req, res, next) {
+  res.render("projects");
+});
 
 // TODO: Use router from projects api
 
 // TODO: Use router from services api
-
-// Use router from contact api
-app.use("/", contactRouter);
 
 // Render under construction page
 app.use((req, res) => {

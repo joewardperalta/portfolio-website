@@ -1,11 +1,6 @@
 var express = require("express");
 var router = express.Router();
 
-// Render projects page
-router.get("/projects", function (req, res, next) {
-  res.render("projects");
-});
-
 router.get("/api/projects", (req, res) => {
   res.send({ data: "Get all projects" });
 });
