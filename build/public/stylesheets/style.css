@@ -215,6 +215,10 @@ img {
 }
 
 /* Project section */
+#project-list a {
+  color: black;
+  text-decoration: none;
+}
 
 /* Testimonial section */
 #testimonial-section {
