@@ -35,7 +35,7 @@ async function populateFeaturedProjects() {
         // Create a col element
         const col = document.createElement("div"); 
         col.classList.add("col-12");
-        col.classList.add("col-md-6")
+        col.classList.add("col-md-4")
 
         // Create a card element
         const card = document.createElement("div"); 
