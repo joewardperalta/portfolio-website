@@ -274,36 +274,11 @@ img {
 
 /* Footer */
 #footer {
-  padding-top: 5rem;
+  text-align: center;
+  padding: 1rem 0;
 }
-#footer ul {
-  padding: 0;
-  list-style-type: none;
-}
-#footer ul li {
-  padding: 0.1rem 0;
-}
-#footer ul li a {
-  color: white;
-}
-#footer #categories ul li a {
-  text-decoration: none;
-}
-#footer h6 {
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.2;
-}
-#footer .row {
-  border-bottom: 2px solid grey;
-}
-#footer .row:first-child {
-  padding-bottom: 4rem;
-}
-#footer .row:last-child {
-  border-bottom: none;
-  padding: 2rem 0;
+#footer p {
+  margin-bottom: 0;
 }
 
 /* Under development section */
@@ -326,12 +301,20 @@ img {
   #testimonial-section #testimonial-list .card {
     margin-bottom: 5rem;
   }
+
+  .title {
+    font-size: 2.2rem;
+  }
 }
 
 /* Small Devices */
 @media screen and (min-width: 576px) {
   #testimonial-section #testimonial-list .card {
     margin-bottom: 5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
   }
 }
 
