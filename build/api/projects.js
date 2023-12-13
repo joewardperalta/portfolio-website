@@ -1,8 +1,9 @@
 var express = require("express");
 var router = express.Router();
+var projects = require("../data/projects.json")
 
 router.get("/api/projects", (req, res) => {
-  res.send({ data: "Get all projects" });
+  res.status(200).json(projects);
 });
 
 router.get("/api/projects/:id", (req, res) => {

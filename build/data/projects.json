@@ -1,0 +1,16 @@
+[
+  {
+    "title": "freeCodeCamp Survey Form",
+    "description": "Project challenge provided by freeCodeCamp.",
+    "img": "/images/freeCodeCamp Survey Form.png",
+    "link": "https://joewardperalta.github.io/freeCodeCamp-survey-form/",
+    "featured": true
+  },
+  {
+    "title": "Digital Clock",
+    "description": "Standard digital clock built on Next.js framework.",
+    "img": "/images/Digital Clock.png",
+    "link": "https://clock-pi-bice.vercel.app/",
+    "featured": true
+  }
+]
