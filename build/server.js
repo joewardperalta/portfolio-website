@@ -42,7 +42,7 @@ app.get("/projects", function (req, res, next) {
   res.render("projects");
 });
 
-// TODO: Use router from projects api
+app.use(projectsRouter);
 
 // TODO: Use router from services api
 
