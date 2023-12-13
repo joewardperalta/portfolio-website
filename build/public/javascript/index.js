@@ -46,7 +46,7 @@ async function populateFeaturedProjects() {
         cardBody.classList.add("card-body");
 
         // Create a card-title element
-        const cardTitle = document.createElement("h4");
+        const cardTitle = document.createElement("h5");
         cardTitle.classList.add("card-title");
 
         // Create a card-text element
