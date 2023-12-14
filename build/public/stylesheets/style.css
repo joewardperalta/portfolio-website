@@ -4,6 +4,7 @@
 :root {
   --color-primary: #6932f5;
   --color-secondary: #e9e1ff;
+  --color-tertiary: #f3f4f8;
 
   --border: 2px solid var(--color-primary);
   --border-soft: 5px;
@@ -58,10 +59,6 @@ img {
 
 .sub-section {
   padding: 3rem 0;
-}
-
-.section-heading {
-  margin: 0 0 5rem 0;
 }
 
 /************************************* Components *************************************/
@@ -161,7 +158,7 @@ img {
   color: black;
   text-decoration: none;
 }
-.card .card-title a i {
+.card .card-title i {
   color: var(--color-primary);
 }
 
@@ -268,15 +265,16 @@ img {
   box-shadow: 0 0 0 0.25rem var(--color-primary);
 }
 #contact-section h5 {
-  font-weight: 700;
+  font-weight: 600;
 }
 #contact-section a {
-  color: black;
   text-decoration: none;
 }
-#contact-section #social-connection .col-12 {
-  padding: 2rem 0;
-  border-bottom: 2px solid grey;
+#contact-section .card .card-body {
+  background-color: var(--color-tertiary);
+}
+#contact-section .card .card-text a {
+  color: var(--color-primary);
 }
 
 /* Footer */
@@ -335,7 +333,6 @@ img {
 
 /* Medium Devices */
 @media screen and (min-width: 768px) {
-
 }
 
 /* Large Devices */
