@@ -22,23 +22,28 @@ app.use(express.static("build/public"));
 
 /*********************** Routes ***********************/
 
+// Redirect to home page
+app.get("/", (req, res) => {
+  res.redirect(301, "/home");
+})
+
 // Render home page
-app.get("/home", function (req, res) {
+app.get("/home", (req, res) => {
   res.render("index", { title: "Joeward Peralta" });
 });
 
 // Render about page
-app.get("/about", function (req, res) {
+app.get("/about", (req, res) => {
   res.render("about");
 });
 
 // Render contact page
-app.get("/contact", function (req, res, next) {
+app.get("/contact", (req, res, next) => {
   res.render("contact");
 });
 
 // Render projects page
-app.get("/projects", function (req, res, next) {
+app.get("/projects", (req, res, next) => {
   res.render("projects");
 });
 
