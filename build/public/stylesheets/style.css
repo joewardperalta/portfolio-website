@@ -134,6 +134,25 @@ img {
   color: black;
   margin: 0 0.5rem;
 }
+.navbar .nav-link.active {
+  color: var(--color-primary);
+}
+.navbar .nav-link::before {
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 3px;
+  margin-right: 10px;
+}
+
+.active::before {
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 3px;
+  background-color: var(--color-primary);
+  margin-right: 10px;
+}
 
 /* Avatar */
 .avatar {

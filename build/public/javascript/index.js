@@ -1,11 +1,11 @@
 "use strict";
 
 const projectList = document.querySelector("#project-list");
-const formControl = document.querySelectorAll("#contact-section form .form-control");
+const formControls = document.querySelectorAll("#contact-section form .form-control");
 
 
 // Change form control class in contact section to active when focused
-[...formControl].map((e) => {
+[...formControls].map((e) => {
   e.addEventListener("focus", () => {
     const activeFormControl = document.querySelector(
       "#contact-section form .form-control.active"

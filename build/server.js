@@ -23,7 +23,7 @@ app.use(express.static("build/public"));
 /*********************** Routes ***********************/
 
 // Render home page
-app.get("/", function (req, res) {
+app.get("/home", function (req, res) {
   res.render("index", { title: "Joeward Peralta" });
 });
 
