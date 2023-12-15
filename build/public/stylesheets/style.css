@@ -10,6 +10,7 @@
   --border-soft: 5px;
 
   --shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  --card-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 /************************************* Global *************************************/
@@ -221,7 +222,7 @@ img {
 
 /* Project section */
 #project-list .card {
-  box-shadow: var(--shadow);
+  box-shadow: var(--card-shadow);
 }
 #project-list .skills {
   list-style-type: none;
