@@ -223,6 +223,19 @@ img {
 #project-list .card {
   box-shadow: var(--shadow);
 }
+#project-list .skills {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+#project-list .skills .skill {
+  padding: 2px 8px;
+  background-color: var(--color-tertiary);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
 
 /* Testimonial section */
 #testimonial-section {

@@ -2,66 +2,77 @@ const projectList = document.querySelector("#project-list");
 
 // This function will populate the featured projects section of the home page
 async function populateFeaturedProjects() {
-
   // Fetch the projects' api
   const res = await fetch("/api/projects");
   let projects = res.json();
 
   // Populate the project list with featured projects
   projects
-  .then(data => {
-    data.map(project => {
-      // Create a col element
-      const col = document.createElement("div"); 
-      col.classList.add("col-12");
-      col.classList.add("col-md-4")
+    .then((data) => {
+      data.map((project) => {
+        // Create a col element
+        const col = document.createElement("div");
+        col.classList.add("col-12");
+        col.classList.add("col-md-4");
 
-      // Create a card element
-      const card = document.createElement("div"); 
-      card.classList.add("card");
+        // Create a card element
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-      // Create a card-body element
-      const cardBody = document.createElement("div");
-      cardBody.classList.add("card-body");
+        // Create a card-body element
+        const cardBody = document.createElement("div");
+        cardBody.classList.add("card-body");
 
-      // Create a card-title element
-      const cardTitle = document.createElement("h5");
-      cardTitle.classList.add("card-title");
+        // Create a card-title element
+        const cardTitle = document.createElement("h5");
+        cardTitle.classList.add("card-title");
 
-      // Create a card-text element
-      const cardText = document.createElement("p");
-      cardText.classList.add("card-text");
+        // Create a card-text element
+        const cardText = document.createElement("p");
+        cardText.classList.add("card-text");
 
-      // Create an anchor tag element
-      const link = document.createElement("a");
+        // Create an anchor tag element
+        const link = document.createElement("a");
 
-      // Create img element
-      const img = document.createElement("img");
+        // Create img element
+        const img = document.createElement("img");
 
-      // Create font awesome link icon
-      const fontAwesomeLink = document.createElement("i");
-      fontAwesomeLink.classList.add("fa-solid");
-      fontAwesomeLink.classList.add("fa-link")
+        // Create an unsorted list element
+        const ul = document.createElement("ul");
+        ul.classList.add("skills");
 
-      col.append(card);
-      card.append(img);
-      card.append(cardBody);
+        // Create font awesome link icon
+        const fontAwesomeLink = document.createElement("i");
+        fontAwesomeLink.classList.add("fa-solid");
+        fontAwesomeLink.classList.add("fa-link");
 
-      link.setAttribute("href", project.link);
-      link.setAttribute("target", "_blank");
-      link.textContent = project.title + " ";
-      link.append(fontAwesomeLink);
+        col.append(card);
+        card.append(img);
+        card.append(cardBody);
 
-      cardBody.append(cardTitle);
-      cardBody.append(cardText);
+        link.setAttribute("href", project.link);
+        link.setAttribute("target", "_blank");
+        link.textContent = project.title + " ";
+        link.append(fontAwesomeLink);
 
-      cardTitle.append(link);
-      cardText.textContent = project.description;
-      img.setAttribute("src", project.img);
+        cardBody.append(cardTitle);
+        cardBody.append(cardText);
 
-      projectList.append(col)
+        cardTitle.append(link);
+        cardText.textContent = project.description;
+        img.setAttribute("src", project.img);
+
+        project.skills.forEach((element) => {
+          const li = document.createElement("li");
+          li.classList.add("skill");
+          li.textContent = element;
+          ul.append(li);
+        });
+
+        cardBody.append(ul);
+        projectList.append(col);
+      });
     })
-  })
-  .catch(err => console.log(err));
+    .catch((err) => console.log(err));
 }
-populateFeaturedProjects()
+populateFeaturedProjects();
